@@ -1,0 +1,15 @@
+.Footer1{
+    display: block;
+    background-color: gray;
+    margin-top: 240px;
+    padding: .1px;
+}
+
+.Footer1 p{
+    padding-left: 20px;
+
+}
+
+.bottom{
+    border-bottom: solid 2px black;
+}
