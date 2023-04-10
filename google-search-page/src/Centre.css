@@ -16,13 +16,12 @@
   height: 30px;
   border-radius: 20px;
   border: 1px solid #ccc;
-  padding: 5px 30px 5px 20px; /* Add some padding to the left for the icon */
-  background-image: url('images/search.png'); /* Set the icon as the background image */
-  background-position: 5px center; /* Position the icon 5px from the left and centered vertically */
-  background-repeat: no-repeat; /* Don't repeat the icon */
+  padding: 5px 30px 5px 20px;
+  background-image: url('images/search.png');
+  background-position: 5px center;
+  background-repeat: no-repeat;
 }
 
-/* Hide the default search box appearance */
 .search-box::-webkit-search-cancel-button,
 .search-box::-webkit-search-decoration,
 .search-box::-webkit-search-results-button,
@@ -58,7 +57,7 @@ margin: 15px;
 .search-icon{
 position: absolute;
 transform: translateY(-50%);
-background-repeat: no-repeat; /* Don't repeat the icon */
+background-repeat: no-repeat;
 }
 
 .icn1{
@@ -79,4 +78,10 @@ background-repeat: no-repeat; /* Don't repeat the icon */
 .languages a {
   text-decoration: none;
   margin: auto 5px;
+}
+
+.search-list{
+  list-style-type: none;
+  text-align: center;
+  color: #000;
 }
