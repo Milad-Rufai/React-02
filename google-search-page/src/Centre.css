@@ -8,11 +8,28 @@
   width: 20%;
 }
 
+
+
+
 .search{
   width: 40%;
   height: 30px;
   border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 5px 30px 5px 20px; /* Add some padding to the left for the icon */
+  background-image: url('images/search.png'); /* Set the icon as the background image */
+  background-position: 5px center; /* Position the icon 5px from the left and centered vertically */
+  background-repeat: no-repeat; /* Don't repeat the icon */
 }
+
+/* Hide the default search box appearance */
+.search-box::-webkit-search-cancel-button,
+.search-box::-webkit-search-decoration,
+.search-box::-webkit-search-results-button,
+.search-box::-webkit-search-results-decoration {
+  display: none;
+}
+
 
 .btn{
 margin: 10px;
@@ -33,4 +50,33 @@ margin: 15px;
   color: white;
 }
 
+.icon{
+  height: 30px;
+  width: 30px;
+}
 
+.search-icon{
+position: absolute;
+transform: translateY(-50%);
+background-repeat: no-repeat; /* Don't repeat the icon */
+}
+
+.icn1{
+  left: 990px;
+  top: 270px;
+  height: 20px;
+  width: 20px;
+}
+
+.icn2{
+  left: 1030px;
+  top: 268px;
+  height: 30px;
+  width: 30px;
+}
+
+
+.languages a {
+  text-decoration: none;
+  margin: auto 5px;
+}

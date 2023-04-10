@@ -1,5 +1,15 @@
 .head{
     display: flex;
     justify-content: flex-end;
-    gap: 8px;
+    gap: 15px;
+    margin-right: 25px;
+}
+
+.icon{
+    height: 35px;
+    width: 35px;
+}
+
+.user{
+    border-radius: 50%;
 }

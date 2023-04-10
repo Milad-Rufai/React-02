@@ -1,15 +1,41 @@
+
+
 .Footer1{
     display: block;
-    background-color: gray;
+    background-color: rgb(243, 241, 241);
     margin-top: 240px;
     padding: .1px;
 }
 
 .Footer1 p{
-    padding-left: 20px;
+    padding-left: 35px;
 
 }
 
+.list{
+    list-style-type: none;
+    display: inline-flex;
+    gap: 30px;
+}
+
+.leaf-icon{
+    width: 20px;
+    height: 20px;
+    padding-top: 5px;
+}
+
+.btm{
+    display: flex;
+    flex-direction: row;
+}
+
+.btm p{
+    margin: auto 200px;
+}
+
+.right{
+    margin-left: 150px;
+}
 .bottom{
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px rgb(218, 215, 215);
 }
