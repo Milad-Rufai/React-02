@@ -9,25 +9,28 @@ import { useState } from 'react';
 
 function Centre() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [listItems, setListItems] = useState([]);
+  const [listItems, setListItems] = useState('');
+
+const handleChange = (event) => {
+  setSearchTerm(event.target.value)
+}
+
+const handleKeyDown = (event) => {
+  if(event.key === 'Enter'){
+    setListItems(searchTerm)
+  }
+}
+  
   return (
     <div className='Centre'>
       <img className='Centre-logo' src={logo} alt='logo'></img>
       <br></br>
-        <form onSubmit={(event) => {
-          event.preventDefault();
-          setListItems([...listItems, searchTerm]);
-          setSearchTerm('');
-        }}>
-        <input className='search' type='search-bar'></input>
+        <input className='search' type='search-bar' onChange={handleChange} onKeyDown={handleKeyDown}></input>
         <img className='search-icon icn1' src={mic} alt='logo'></img>
         <img className='search-icon icn2' src={imagesearch} alt='logo'></img>
-        </form>
-      <ul className='search-list'>
-        {listItems.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+      <h2 className='search-list'>
+        {listItems}
+      </h2>
       <div>
         <button className='btn' href='#'>Google Search</button>
         <button className='btn' href='#'>I'm Feeling Lucky</button>
